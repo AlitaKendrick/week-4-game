@@ -143,6 +143,7 @@ $(document).ready(function() {
 //reset function that acts as a page refresh
 
 	$('body').on('click', '.refresh', function() {
+		$('#choosePlayer').empty();
 		$('#damage').text('');
 		$('#punch').text('');
 		$('#character').empty();	
