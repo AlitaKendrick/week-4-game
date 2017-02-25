@@ -1,0 +1,54 @@
+
+body {
+	/*background-image: url(http://img13.deviantart.net/1e7c/i/2014/278/8/1/south_park_elementary_school_hallway_by_spongekid1999-d81p7uv.png);
+*/
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+h1 {
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+/*use this to hide previously defeated players*/
+.hide {
+	display: none;
+}
+
+/*keeps opponents inline */
+.inline {
+	display: inline-block;
+}
+
+
+/*progress bar attributes*/
+
+.progress {
+	width: 100px;
+
+}
+
+.progress-bar {
+	color: black;
+	background-color: purple;
+
+}
+
+
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+
+

@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GAME FOUR</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 </head>
 <body>
-	
+	<header class="text-center">
+		<h1>SOUTH PARK BATTLE</h1>
+	</header>
+
+<!-- main section where all players will appear to begin -->
+	<div class="container">
+		<div class="select text-center" id="select">
+			<h2>CLICK TO CHOOSE YOUR CHARACTER</h2>
+			<div class="row" id="choosePlayer">
+			</div>
+		</div>
+
+<!-- one player will move here upon 'click' and remainder will move to following section  -->
+		<div class="row">
+			<div class="character col-md-12 ">
+				<h3 class="top">YOUR CHARACTER</h3>
+				<div id="character">
+				</div>
+			</div>
+
+<!-- after user has chosen one player to be their character, user must choose one opponent to attack -->
+			<div class="enemies col-md-12 ">
+				<h3 class="top">CLICK TO CHOOSE AN OPPONENT</h3>
+				<ul id="enemies">
+				</ul>
+			</div>
+		</div>
+
+<!-- attack area where user will click a button and a message will appear to display opponents remaining HP  -->
+		<div class="attack">
+			<h3 id="combat">ATTACK ZONE</h3>
+			<h4>KEEP CLICKING 'ATTACK'</h4>
+			<button class="btn btn-danger strike">ATTACK</button>
+			<h4 id="punch"></h4>
+			<h4 id="damage"></h4>
+		</div>
+		<div class="defender">
+			<div id="defender">
+			</div>
+		</div>
+
+<!-- reset button to start the game from scratch  -->
+		<div class="reset">
+			<button class="btn btn-primary refresh">RESET</button>
+		</div>
+	</div>
+
+
+	<div class="col-md-12"> 
+	<iframe width="0" height="0" src="https://www.youtube.com/embed/JNG_Kn-m73M?autoplay=1&cc_load_policy=1"></iframe>
+	</div>
+
+	<script src="assets/javascript/game.js"></script>
 </body>
+<footer>
+	<p> Northwester Coding Bootcamp 2017 Alita Kendrick </p>
+</footer>
 </html>
