@@ -77,10 +77,11 @@ $(document).ready(function() {
 		heroAttack = playerAttack;
 	});
 
+
 	$('body').on('click', '.enemy', function() {
 		$('.attack').removeClass('hide');
 		if($.trim($("#defender").html())=='') {
-			$('#damage').text('Ready... Fight!');
+			$('#damage').text('READY... ATTACK!');
 			$(this).removeClass('enemy').addClass('defender');
 			$(this).detach().appendTo('#defender');
 			defendHealth = parseInt($('.defender').children('.characters').attr('data-hlth'));
